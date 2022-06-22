@@ -8,21 +8,15 @@
     <title>Document</title>
 </head>
 <body>
-        {% for field_name, field_value in user.items %}
-            {% if field_name == "name" %}
-                <p><i>{{ field_value }}</i></p>
-            {% else %}
-                <p>{{ field_value }}</p>
-            {% endif %}
-        {% endfor %}
         <p>
-            {{ title }}
+            {{ article.title }}
         </p>
         <p>
-            {{ author }}
+            {{ article.author }}
         </p>
         <p>
-            {{ content }}
+            {{ article.content }}
         </p>
+<a href="/">На главную</a>
 </body>
 </html>
